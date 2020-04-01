@@ -39,7 +39,7 @@
 <body>
 
 <div class="containter">
-    <h1>D3.js – samples</h1>
+    <h1>D3.js – samples (COVID-19 в России)</h1>
 
     <ul>
         <li><a href="line-chart.html">Line chart</a></li>
@@ -101,7 +101,7 @@
                 return d
             });
 
-            const xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(d3.time.format("%d-%B"));
+            const xAxis = d3.svg.axis().scale(x).orient("bottom").tickFormat(d3.time.format("%d %B"));
 
             svg.append("g").attr("class", "y axis").attr("transform", "translate(" + 30 + ",0)").call(yAxis);
 
